@@ -24,7 +24,7 @@ def elem_text(elem):
 
 
 def iterlinks(root, base_url):
-    link_tags = {"a": "href", "area": "href", "iframe": "src"}
+    link_tags = {"a": "href", "area": "href", "iframe": "src", "script": "src", "link": "href"}
     for tag in root.iter('*'):
         if not is_string(tag.tag):
             continue
